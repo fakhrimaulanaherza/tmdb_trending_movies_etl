@@ -29,7 +29,7 @@ DATASET_ID = os.getenv("DATASET_ID")
 BASE_URL = os.getenv("BASE_URL") 
 # Load BigQuery Credentials
 CREDENTIALS = GcpCredentials.load("bigquery-credentials").get_credentials_from_service_account()
-tz = Zoneinfo("Asia/Jakarta")
+tz = ZoneInfo("Asia/Jakarta")
 
 
 # /*********** Predefined Task ***********/
